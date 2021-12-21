@@ -1,0 +1,57 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+<head>
+<title>Contact Us</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="music class" >
+<meta name="author" content="jayesh">
+<meta name="description" content="this is contact us page">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="contact_us.css">
+
+</head>
+<body style="background: url('ContactUs.png'); background-repeat: no-repeat; background-size: 100% 830px;">
+    <nav class="navbar">
+        <a href="Home_Page.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="#about"><i class="fa fa-fw fa-users"></i>About Us</a>
+        <a href="Contact_Us.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
+        <a href="Login.html">Login <i class="fa fa-fw fa-user"></i></a>
+      </nav>
+      <!--contact us form-->
+  <form class="modal-content" action="../JavaScript/Success.html" onsubmit="return validateForm()" novalidate>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p></p>
+      <hr>
+      <label for="name"><b>Name</b></label>
+      <input type="text" id="id01" placeholder="Enter full name" name="fname" onblur="valid1()">
+
+      <label for="Instruname"><b>Learning Instrument Name</b></label>
+      <select name="Instruname" id="id02" onblur="valid2()">
+        <option value="violin">Violin</option>
+        <option value="guitar">Guitar</option>
+        <option value="saxophone">Saxophone</option>
+        <option value="piano">Piano</option>
+        <option value="drums">Drums</option>
+      </select><br>
+
+      <label for="Semail"><b>Email</b></label>
+      <input type="text" id="id03" placeholder="Enter Email" name="Semail" onblur="valid3()">
+
+      <label for="Subject"><b>Subject</b></label>
+      <input type="text" id="id04" name="subject" onblur="valid4()">
+      
+      <label for="message"><b>Message</b></label><br>
+      <textarea placeholder="Type here..." id="id05" name="msg" required style="height: 100px; width: 525px; font-size: 16px; margin-left: 25px; margin-right: 25px;" onblur="valid5()"></textarea>
+
+
+      <div class="clearfix">
+       <!-- <button type="button" onclick= "clearfield()" class="cancelbtn">Cancel</button> -->
+        <center><button type="submit" name="send" class="sendbtn">Send</button></center>
+      </div>
+    </div>
+  </form>
+    <script src="MyScipt/contact.js"></script>
+    </body>
+</html>
