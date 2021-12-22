@@ -77,7 +77,6 @@ input[type="text"]{
 	outline: none;
 	height: 20px;
     color: black;
-    text-transform: uppercase;
 }
 input[type="password"],input[type="email"]{
     border: none;
