@@ -1,0 +1,36 @@
+<!DOCTYPE html><!-- dtd path : document type definition -->
+<html>
+<head>
+<title>Login</title>
+<meta charset="UTF-8">
+<meta name="keywords" content="music class login form" >
+<meta name="author" content="jayesh">
+<meta name="description" content="this is login form">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Project_Style.css">
+</head>
+<body style="background: url('Login_Back.jpg'); background-repeat: no-repeat; background-size: 100% 753px;">
+    <nav class="navbar">
+      <a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="#about"><i class="fa fa-fw fa-users"></i>About Us</a>
+      <a href="Contact_Us.html"><i class="fa fa-fw fa-envelope"></i>Contact Us</a>
+    </nav>
+    <!-- <img src="Login_Back.jpg" alt=""> -->
+    <div class="loginbox">
+        <img src="login-icon.png" class="avtar">
+            <h1 class="text1">Login</h1>
+            <form action="../Jquery/Success.html" id="LoginForm" onsubmit="return validateForm()" novalidate>
+                <p>Username</p>
+                <input id="uname" type="text" name="uname" placeholder="Enter Username" >
+                <p>Password</p>
+                <input id="password" type="Password" name="password" placeholder="Enter Password" >
+                <input type="submit" name="log" value="Login" href="#">
+                <a href="#" class="fp">Forgot Password</a><a href="#" class="qm">?</a> <br>
+                <p id="error1"></p>
+            </form>
+    </div>
+
+    <script src="Login.js"></script>
+    </body>
+</html>
